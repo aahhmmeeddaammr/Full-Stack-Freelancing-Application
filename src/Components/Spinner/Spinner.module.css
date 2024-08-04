@@ -1,0 +1,29 @@
+.loading {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load {
+    height: 60px;
+    width: 60px;
+    border: 5px solid #157efb;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: load;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
